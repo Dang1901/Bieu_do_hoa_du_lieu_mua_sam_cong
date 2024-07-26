@@ -1,0 +1,133 @@
+.ant-table-wrapper {
+  background-color: white;
+  border-radius: 12px;
+  .ant-table-column-sorter-down.active {
+    color: #883dcf;
+  }
+  .ant-table-column-sorter-up.active {
+    color: #883dcf;
+  }
+  .ant-table-content {
+    font-family: ps-Bold;
+    font-size: 14px;
+    font-weight: 500;
+    .ant-checkbox {
+      &-checked {
+        .ant-checkbox-inner {
+          background-color: #883dcf;
+
+          &:hover {
+            background-color: #883dcf;
+          }
+        }
+        &:not(.ant-checkbox-disabled):hover {
+          .ant-checkbox-inner {
+            background-color: #883dcf;
+          }
+        }
+      }
+    }
+    .ant-table-thead {
+      padding-top: 2px;
+      .ant-checkbox-inner {
+        border: 1px solid #883dcf;
+      }
+      .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner {
+        border: 1px solid #883dcf;
+      }
+      .ant-checkbox-indeterminate .ant-checkbox-inner:after {
+        background-color: #883dcf;
+      }
+
+      > tr {
+        > th {
+          background-color: #ffffff;
+          padding: 18px 22px;
+
+        }
+      }
+    }
+    .ant-table-tbody {
+      color: #667085;
+      .ant-checkbox-inner {
+        border: 1px solid #883dcf;
+      }
+      tr {
+        td {
+          padding: 18px 22px;
+        }
+      }
+      .ant-table-row.ant-table-row-selected > .ant-table-cell {
+        background-color: #f9f9fc;
+      }
+    }
+  }
+  .ant-pagination {
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    .ant-select {
+      height: 32px;
+      .ant-select-selector {
+        cursor: pointer;
+      }
+      .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+        background-color: #f4ecfb;
+      }
+    }
+    .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon {
+      color: #883dcf;
+    }
+    .ant-pagination-options {
+      display: flex;
+      align-items: center;
+      .ant-select-selection-item {
+        font-family: ps-medium;
+      }
+    }
+    .ant-pagination-item-link {
+      color: #883dcf;
+      background-color: #f4ecfb;
+    }
+    .ant-pagination-next:active .ant-pagination-item-link {
+      background-color: #f4ecfb;
+    }
+    .ant-pagination-prev:active .ant-pagination-item-link {
+      background-color: #f4ecfb;
+    }
+    .ant-pagination-item {
+      &:active {
+        background-color: #f4ecfb;
+      }
+      background-color: #f4ecfb;
+    }
+
+    .ant-pagination-item a {
+      color: #883dcf;
+    }
+
+    .ant-pagination-item-active {
+      border: 1px solid #883dcf;
+      background-color: #883dcf;
+
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.secondary-table {
+  .ant-table-thead > tr > th {
+    background-color: #f9f9fc !important;
+  }
+}
+.ant-pagination-total-text {
+  font-family: ps-semiBold;
+  color: gray;
+  position: absolute;
+  left: 0;
+  padding-left: 24px;
+}
